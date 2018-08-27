@@ -26,7 +26,7 @@ public class WebCam : MonoBehaviour {
 		{
 			WebCamDevice[] devices = WebCamTexture.devices;
 			cameraName = devices[0].name;
-			cameraTexture = new WebCamTexture(cameraName, 1440, 720,15);
+			cameraTexture = new WebCamTexture(cameraName,1920,1080);
 
 			rawimage.texture = cameraTexture;
 			cameraTexture.Play();
